@@ -1,6 +1,6 @@
 /*
  *  EXFConstants.h
- *  iphoneGeo
+ *  
  *
  *  Created by steve woodcock on 30/03/2008.
  *  Copyright 2008. All rights reserved.
@@ -197,14 +197,14 @@ The image data is stored as two longs (numerator and denominator)
 -(id) initWith: (long) numerator: (long) denominator;
 
 /*!
- @method numerator
+ @property numerator
  @abstract the numerator part of the fraction
  
  */
 @property (readonly) long numerator;
 
 /*!
- @method denominator
+ @property denominator
  @abstract the denominator part of the fraction
  
  */
@@ -231,7 +231,7 @@ components that each tag consists of.
 The dataType can only be one of the valid EXFDataType enum values.
 The shortName is as specified in the EXF specification. If localised or more user readable names are required you should use these 
 as the key values to the localised form.
-The parentTagId shows the hierarchical parent Tag of ach EXFTag. This is required in order to work out which directory or subdirectory 
+The parentTagId shows the hierarchical parent Tag of each EXFTag. This is required in order to work out which directory or subdirectory 
 a tag value should be inserted into.
 Editable tags are those that can be altered or add by users of the library. Attempting to alter a non-writable tag will result in an exception.
 Components defines the number of instances of each data type. As each data type is a certain number of bytes the actual byte size occupied 
@@ -257,6 +257,7 @@ For more detail see the EXF specification <a href="http://www.exif.org/Exif2-2.P
 */
 
 -(id) initWith: (EXFTagId) aTagId: (EXFDataType)aDataType: (NSString*) aName: (int) parentTagId: (BOOL)editable: (int) components;
+
 
 @property (readonly) EXFTagId tagId;
 @property (readonly) EXFDataType dataType;

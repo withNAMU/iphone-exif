@@ -1,6 +1,6 @@
 /*
  *  EXFGPSLoc.m
- *  iphoneGeo
+ *  
  *
  *  Created by steve woodcock on 30/03/2008.
  *  Copyright 2008. All rights reserved.

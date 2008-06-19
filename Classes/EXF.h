@@ -1,6 +1,6 @@
 /*
  *  EXF.h
- *  iphoneGeo
+ *  
  *
  *  Created by steve woodcock on 23/03/2008.
  *  Copyright 2008. All rights reserved.

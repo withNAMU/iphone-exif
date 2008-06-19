@@ -1,9 +1,9 @@
 /*
  *  logging.h
- *  tutorial-coredata
+ * 
  *
  *  Created by steve woodcock on 28/02/2008.
- *  Copyright 2008 __MyCompanyName__. All rights reserved.
+ *  Copyright 2008. All rights reserved.
  *
  */
 
