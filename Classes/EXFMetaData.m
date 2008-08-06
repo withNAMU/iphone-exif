@@ -548,7 +548,7 @@ const NSString* typeMappings [13] ={@"",@"CciISs",@"NSString",@"SsCcIi",@"LlIiSs
         // else lets get the string that matches the types
         NSString* dataTypeStr = (NSString*) typeMappings[type];
         
-        if ([@"NSString" isEqualTo:dataTypeStr ]) {
+        if ([@"NSString" isEqualToString:dataTypeStr ]) {
              // it has to match the class name in the typemappings
             if(! [value isKindOfClass:[NSString class]] || (! [value canBeConvertedToEncoding:NSASCIIStringEncoding])  ){
                 NSException *e = [NSException
@@ -557,7 +557,7 @@ const NSString* typeMappings [13] ={@"",@"CciISs",@"NSString",@"SsCcIi",@"LlIiSs
                                userInfo:nil];
                 @throw e;
              }
-        } else if ([@"NSData" isEqualTo:dataTypeStr] ){
+        } else if ([@"NSData" isEqualToString:dataTypeStr] ){
             if(! [value isKindOfClass:[NSData class]] ){
                     NSException *e = [NSException
                                       exceptionWithName:@"InvalidTypeForHandlerException"
@@ -565,7 +565,7 @@ const NSString* typeMappings [13] ={@"",@"CciISs",@"NSString",@"SsCcIi",@"LlIiSs
                                       userInfo:nil];
                     @throw e;
             }  
-        } else if ([@"EXFraction" isEqualTo:dataTypeStr] ){
+        } else if ([@"EXFraction" isEqualToString:dataTypeStr] ){
             if(! [value isKindOfClass:[EXFraction class]] ){
                 NSException *e = [NSException
                                   exceptionWithName:@"InvalidTypeForHandlerException"
