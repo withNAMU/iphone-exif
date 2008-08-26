@@ -31,9 +31,9 @@
 }
 
 
-@property (nonatomic, retain) EXFraction* degrees;
-@property (nonatomic, retain) EXFraction* minutes;
-@property (nonatomic, retain) EXFraction* seconds;
+@property (retain) EXFraction* degrees;
+@property (retain) EXFraction* minutes;
+@property (retain) EXFraction* seconds;
 
 -(double) descriptionAsDecimal;
 
@@ -55,8 +55,8 @@
 }
 
 
-@property (nonatomic, retain) EXFraction* hours;
-@property (nonatomic, retain) EXFraction* minutes;
-@property (nonatomic, retain) EXFraction* seconds;
+@property (retain) EXFraction* hours;
+@property (retain) EXFraction* minutes;
+@property (retain) EXFraction* seconds;
 
 @end
